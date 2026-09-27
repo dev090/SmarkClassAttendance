@@ -1,0 +1,25 @@
+node_modules/
+dist/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+.env.local
+.DS_Store
+# PlatformIO
+firmware/.pio/
+firmware/include/config.h
+# Flutter
+mobile/build/
+mobile/.dart_tool/
+mobile/.flutter-plugins*
+mobile/.packages
+mobile/ios/Pods/
+mobile/android/.gradle/
+mobile/android/local.properties
+
+# secrets
+*.env
+!*.env.example
+atlas-credentials.env

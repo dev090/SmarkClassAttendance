@@ -1,0 +1,18 @@
+{
+  "name": "smartclass",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter ./backend --filter ./dashboard run dev",
+    "dev:backend": "pnpm --filter ./backend run dev",
+    "dev:dashboard": "pnpm --filter ./dashboard run dev",
+    "sim": "pnpm --filter ./simulator run start",
+    "build": "pnpm -r run build",
+    "start": "pnpm --filter ./backend run start",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
+    "tunnel": "cloudflared tunnel --url http://localhost:4000 --no-autoupdate",
+    "esp32": "python3 firmware/esp32ctl.py"
+  }
+}
