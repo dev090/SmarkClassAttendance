@@ -3,5 +3,5 @@
 /// Until the backend has a fixed public address, this is the current Cloudflare tunnel URL.
 const String kDefaultServerUrl = String.fromEnvironment(
   'SMARTCLASS_SERVER',
-  defaultValue: 'https://whale-pleased-wishlist-prisoners.trycloudflare.com',
+  defaultValue: 'https://issued-deposit-virgin-functionality.trycloudflare.com',
 );

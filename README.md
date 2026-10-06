@@ -50,11 +50,12 @@ TLS "internal error".
 Phones on cellular or campus Wi-Fi cannot reach your laptop directly. In a second terminal:
 
 ```bash
-pnpm tunnel        # prints  https://<random-words>.trycloudflare.com
+pnpm tunnel        # prints  https://<random-words>.trycloudflare.com  and writes it into the app's default
 ```
 
-That URL is the **Server URL** for the phone app and the ESP32. It changes every time the tunnel restarts:
-put the new one in `mobile/lib/core/app_config.dart` (the app prefills it) and rebuild the app.
+That URL is the **Server URL** for the phone app and the ESP32. It changes every time the tunnel restarts, and the
+tunnel dies whenever the laptop changes network — just run `pnpm tunnel` again. The helper writes the new address into
+`mobile/lib/core/app_config.dart` (rebuild the app to get it prefilled), or type it into the app's sign-in screen.
 
 ---
 
